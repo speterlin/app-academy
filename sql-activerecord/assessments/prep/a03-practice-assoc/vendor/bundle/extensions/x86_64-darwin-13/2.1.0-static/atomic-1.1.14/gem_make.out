@@ -1,0 +1,12 @@
+/Users/speterlin/.rbenv/versions/2.1.2/bin/ruby extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling atomic_reference.c
+linking shared-object atomic_reference.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 atomic_reference.bundle ./.gem.20150506-94269-1657gq8
+installing default atomic_reference libraries
