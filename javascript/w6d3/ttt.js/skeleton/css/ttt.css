@@ -1,0 +1,52 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+.grid {
+  width: 72px;
+}
+
+.cell {
+  float: left;
+  border: 1px solid #ccc;
+  background: #eee;
+  height: 20px;
+  width: 20px;
+}
+
+.cell:hover {
+  background: #ff0;
+}
+
+.cell.x, .cell.o {
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.x:after {
+  color: #f00;
+  content: "x";
+}
+.o:after {
+  color: #0c0;
+  content: "o";
+}
+
+.game-over {
+  cursor: default;
+  background: white;
+}
+
+.winner-x {
+  color: #f00;
+}
+
+.winner-o {
+  color: #0c0;
+}

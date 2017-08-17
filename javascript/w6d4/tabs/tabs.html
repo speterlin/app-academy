@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="tabs.js"></script>
+    <link href="tabs.css" rel="stylesheet" type="text/css">
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+
+    <ul class="tabs" data-content-tabs="#content-tabs">
+      <li><a href='javascript:void(0);' for='#dachschund' id='dachschund'>Dachschund</a></li>
+      <li><a href='javascript:void(0);' for='#lab' id='lab'>Lab</a></li>
+      <li><a href='javascript:void(0);' for='#retreiver' id='retreiver'>Retreiver</a></li>
+    </ul>
+      <div id="content-tabs">
+        <div class="tab-pane" id="dachschund">
+          <p>
+            Dachschund: German dog that digs for beavers
+          </p>
+        </div>
+        <div class="tab-pane" id="lab">
+          <p>
+            Lab: Generally a black dog, very agile and nimble
+          </p>
+        </div>
+        <div class="tab-pane" id="retreiver">
+          <p>
+            Golden Retreiver: Generally golden in color, very happy and delightful
+          </p>
+        </div>
+      </div>
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+
+  </body>
+</html>

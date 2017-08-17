@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="carousel.css">
+    <script src="carousel.js"></script>
+    <script type="text/javascript" src="http://placecorgi.com/javascripts/jquery.placecorgi.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="items">
+        <img class="corgi 1" width="301"/>
+        <img class="corgi 2" width="299"/>
+        <img class="corgi"  />
+      </div>
+
+      <a href="javascript:void(0)" class="slide-right">Prev</a>
+      <a href="javascript:void(0)" class="slide-left">Next</a>
+    </div>
+    <script>
+      $(function() {
+        $('.carousel').carousel();
+      })
+    </script>
+  </body>
+</html>

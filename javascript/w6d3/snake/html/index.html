@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/snake.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>Snake Game</h1>
+    <figure class="game"></figure>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/snake.js"></script>
+    <script type="text/javascript" src="../js/snake-view.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        new Snakegame.View($('.game'));
+      });
+    </script>
+
+  </body>
+</html>
