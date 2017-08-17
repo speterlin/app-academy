@@ -1,6 +1,13 @@
-# Ignore all assessments
+# Ignore solutions directory
+/solutions/*
+
+# Ignore ruby directories where I haven't contributed
 /ruby/assessments/*
 /ruby/course-001/*
 /ruby/prep-work-master/*
 /ruby/ruby-curriculum/*
 /ruby/test_first_ruby/*
+
+# Ignore .DS_Store files, don't know why these are created
+.DS_Store
+*/.DS_Store
