@@ -1,6 +1,6 @@
 # Ignore all assessments
 /ruby/assessments/*
-/ruby/test_first_ruby/*
 /ruby/course-001/*
-/ruby/ruby-curriculum/*
 /ruby/prep-work-master/*
+/ruby/ruby-curriculum/*
+/ruby/test_first_ruby/*
