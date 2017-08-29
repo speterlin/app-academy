@@ -8,6 +8,10 @@
 /ruby/ruby-curriculum/*
 /ruby/test_first_ruby/*
 
+# Ignore chair rectangle images in javascript/w6d4/zoomable
+/javascript/w6d4/zoomable/ChairRectangle*
+
+
 # Ignore .DS_Store files, don't know why these are created
 .DS_Store
 */.DS_Store
