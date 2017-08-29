@@ -1,10 +1,9 @@
 $.Carousel = function (el) {
   $('body').placecorgi();
   this.$el = $(el);
-  console.log(this, this.$el);
   this.activeIdx = 0;
-  var firstChild = $($('div.items').children()[0]);
-  firstChild.addClass('active');
+  var firstImage = $($('.items li img')[this.activeIdx]);
+  firstImage.addClass('active');
   this.$el.on('click','.slide-left', this.slideLeft.bind(this));
   this.$el.on('click','.slide-right', this.slideRight.bind(this));
 }
@@ -16,13 +15,13 @@ $.Carousel.prototype.slideLeft = function () {
 
 $.Carousel.prototype.slideRight = function (event) {
   event.preventDefault();
-  this.slide(-1)
+  this.slide(-1);
 }
 
 $.Carousel.prototype.slide = function (dir) {
-  var $activeItem = $($('div.items').children()[this.activeIdx]);
+  var $activeItem = $($('.items li img')[this.activeIdx]);
   var nextIdx = jQuery.eq(this.activeIdx, dir);
-  var $nextItem = $($('div.items').children()[nextIdx]);
+  var $nextItem = $($('.items li img')[nextIdx]);
   var newSide, oldSide;
   if (dir == 1) {
     oldSide = "left";
@@ -32,18 +31,18 @@ $.Carousel.prototype.slide = function (dir) {
     newSide = "left";
   }
   $nextItem.addClass('active ' + newSide);
-  $activeItem.one('transitionend', (function() {
-    $activeItem.removeClass('active ' + oldSide);
-  }).bind(this))
-  this.activeIdx = nextIdx;
   setTimeout(function() {
     $activeItem.addClass(oldSide);
     $nextItem.removeClass(newSide);
   },0);
+  $activeItem.one('transitionend', (function() {
+    $activeItem.removeClass('active ' + oldSide);
+  }));
+  this.activeIdx = nextIdx;
 }
 
 jQuery.eq = function (activeIdx, dir) {
-  var totalItems = $('div.items').children().size();
+  var totalItems = $('.items li img').size();
   var nextIdx = activeIdx + dir;
   if (nextIdx == totalItems) {
     nextIdx = 0;

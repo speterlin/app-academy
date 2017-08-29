@@ -3,27 +3,31 @@ div.carousel {
   width: 500px;
 }
 
-div.carousel > div.items {
+div.carousel > .items {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-div.items > img {
+.items li {
+  list-style-type: none;
+}
+
+.items li > img {
   display: none;
 }
 
-div.items > *.active {
+.items li > *.active {
   display: block;
   position: absolute;
   left: 0%;
   transition: left 500ms linear;
 }
 
-div.items > img.active.left {
+.items li > img.active.left {
   left: 100%;
 }
-div.items > img.active.right {
+.items li > img.active.right {
   left: -100%;
 }
