@@ -11,6 +11,9 @@
 # Ignore chair rectangle images in javascript/w6d4/zoomable
 /javascript/w6d4/zoomable/ChairRectangle*
 
+# Ignore assessments
+/javascript/assessments/*
+/sql-activerecord/assessments/*
 
 # Ignore .DS_Store files, don't know why these are created
 .DS_Store
