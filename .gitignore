@@ -13,6 +13,7 @@
 
 # Ignore assessments
 /javascript/assessments/*
+/ruby/a00/*
 /sql-activerecord/assessments/*
 
 # Ignore .DS_Store files, don't know why these are created
